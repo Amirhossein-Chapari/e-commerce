@@ -15,8 +15,6 @@ type Props = {
 };
 
 const MobileNavbar = ({ menuItems }: Props) => {
-
-  
   return (
     <>
       <div className="flex justify-between items-center px-8 h-20 fixed top-0 right-0 left-0 bg-white z-50 shadow">
@@ -27,9 +25,14 @@ const MobileNavbar = ({ menuItems }: Props) => {
               <Menu className="w-6 h-6" />
             </SheetTrigger>
             <SheetContent side="right">
-              <SheetHeader className='flex'>
+              <SheetHeader className="flex">
                 <SheetTitle className="text-left text-xl">
-                    <Image src="/images/TextLogo.svg" alt="Logo" width={140} height={29} />
+                  <Image
+                    src="/images/TextLogo.svg"
+                    alt="Logo"
+                    width={140}
+                    height={29}
+                  />
                 </SheetTitle>
               </SheetHeader>
 
@@ -41,7 +44,6 @@ const MobileNavbar = ({ menuItems }: Props) => {
                     className="text-lg text-left hover:text-primary transition-colors"
                   >
                     {item.name}
-                    
                   </Link>
                 ))}
               </div>

@@ -1,27 +1,27 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-morabba-md: "Morabba_Medium"; 
-  --font-dana-md: "Dana"; 
-  --font-Sahel-SemiBold: "Sahel_SemiBold"; 
+  --font-morabba-md: 'Morabba_Medium';
+  --font-dana-md: 'Dana';
+  --font-Sahel-SemiBold: 'Sahel_SemiBold';
 }
 
 @font-face {
   font-family: Dana;
-  src: url("/fonts/DANA/DanaFaNum-Medium.woff2") format("woff2");
+  src: url('/fonts/DANA/DanaFaNum-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: Morabba_Medium;
-  src: url("/fonts/Morabba/Morabba-Bold.woff2") format("woff2");
+  src: url('/fonts/Morabba/Morabba-Bold.woff2') format('woff2');
 }
 
 @font-face {
   font-family: Sahel_SemiBold;
-  src: url("/fonts/sahel/Sahel-FD.ttf") format("truetype");
+  src: url('/fonts/sahel/Sahel-FD.ttf') format('truetype');
 }
 
 @theme inline {
@@ -72,7 +72,7 @@
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
-  --primary: #6347EB;
+  --primary: #6347eb;
   --primary-foreground: oklch(0.969 0.016 293.756);
   --secondary: oklch(0.967 0.001 286.375);
   --secondary-foreground: oklch(0.21 0.006 285.885);
@@ -133,8 +133,6 @@
   --sidebar-ring: oklch(0.541 0.281 293.009);
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -143,5 +141,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-

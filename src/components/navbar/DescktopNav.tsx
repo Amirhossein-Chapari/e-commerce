@@ -10,7 +10,7 @@ type Props = {
   menuItems: MenuItem[];
 };
 
-function DescktopNav({menuItems}: Props) {
+function DescktopNav({ menuItems }: Props) {
   const pathname = usePathname();
 
   return (
